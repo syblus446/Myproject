@@ -1,0 +1,69 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color:white;
+}
+
+.app_top {
+  margin-bottom: -150px;
+}
+
+.app_top>h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 80%;
+}
+
+.app_logo {
+  height: 12vh;
+}
+
+.app_videos {
+  position: relative;
+  height: 65vh;
+  background-color: #fff;
+  width: 70%;
+  border-radius: 20px;
+  /* max-width: 450px;
+  max-height: 1500px; */
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  width: 25%;
+  height: 85%;
+
+}
+
+/* hides scroll bar */
+.app_videos::-webkit-scrollbar {
+  display: none;
+}
+
+.app_videos {
+  -ms-text-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .app_videos {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .app_videos {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+}
+

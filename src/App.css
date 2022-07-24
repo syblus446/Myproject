@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color: #1d9bf0;
+  --border-color: #5364718f;
+}
+
+.light {
+  --theme-color: #1d9bf0;
+  --theme-page-background: #FFF;
+  --theme-page-text: #000;
+  --light-text-color: #536471;
+  --theme-secondary-background: #eff3f4;
+}
+
+.dark {
+  --theme-color: #fff;
+  --theme-page-background: #192734;
+  --theme-page-text: #FFF;
+  --light-text-color: #8899a6;
+  --theme-secondary-background: #253341;
+}
+
+.App {
+  background: var(--theme-page-background);
+  color: var(--theme-page-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .App{
+      padding-bottom: 3rem;
+  }
+  
+}
